@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h1.logo{
+
+    font-size: 2rem;
+}
+
+
+#root{
+    border: 2px solid black;
+}
+
+
+#root > header{
+    border: 2px solid black;
+}
+
+main{
+    border: 2px solid black;
+}
+
+#root > footer{
+    border: 2px solid black;
+}
+
+
+/* component*/
+
+/*card*/
+
+.card{
+    background-color: rgb(160, 238, 240);
+    border-radius: 16px;
+    margin: 16px 24px;
+    padding: 16px;
+}
+
+button{
+    border:4px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card.soldout::before{
+    content: "Tukendi";
+    background-color: red;
+    color: white;
+}
+
+.card.soldout::after{
+    content: "Tukendi";
+    background-color: red;
+    color: white;
+}

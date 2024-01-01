@@ -1,0 +1,17 @@
+bitmap raster images
+
+vector images
+
+dosya formatlari
+
+webp
+
+
+font ve image inidirmek icin
+
+google fonts
+fontawesome
+lottiefiles
+
+
+span etiketi ayni kalmasini saglar 

@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #1fdf64;
+  --clr-secondary: #247efc;
+  --clr-tertiary: #8924fc;
+
+  --clr-neutral-1: #fff;
+  --clr-neutral-2: #d8d8d8;
+  --clr-neutral-3: #c0c0c0;
+  --clr-neutral-4: #575757;
+  --clr-neutral-5: #333333;
+  --clr-neutral-6: #000000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root > header,
+#root > footer {
+  background-color: var(--clr-neutral-5);
+  color: var(--clr-neutral-1);
+  padding: 16px;
+}
+
+#root > header {
+  border: 2px solid red;
+}
+
+main {
+  border: 2px solid red;
+}
+
+main > .section-banner {
+  background-color: var(--clr-tertiary);
+  color: var(--clr-neutral-1);
+}
+
+main > .section-banner figure {
+  text-align: center;
+}
+
+main > .section-banner figure > img {
+  max-width: 400px;
+}
+
+#root > footer {
+  border: 2px solid red;
+}
+
+/*helpers*/
+
+.limited-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+
+/*componenets --*/
+
+.logo-main {
+  font-weight: 500;
+}
+
+.logo-main i {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+/*buttons --*/
+
+a.btn {
+  background-color: var(--clr-neutral-6);
+  border-radius: 24px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+a.btn.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--clr-neutral-1);
+}
+
+/* navigations*/
+
+.nav-main {
+  border: 2px soild red;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+.nav-main ul {
+  border: 2px solid green;
+  background-color: rgba(218, 143, 218, 0.471);
+  height: 100vh;
+  width: 50vw;
+  text-align: left;
+}
+
+
+.nav-main ul a {
+    border: 2px solid red;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: var(--clr-neutral-6);
+  }
+
+.nav-main .btn-toggle{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 750px) {
+
+
+  #root > header > .limited-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  main > .section-banner > .limited-width {
+    display: flex;
+    
+  }
+  .nav-main {
+    position: static;
+  }
+
+  .nav-main ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    column-gap: 56px;
+  }
+
+  .nav-main .btn-toggle{
+    display: none;
+  }
+  
+}

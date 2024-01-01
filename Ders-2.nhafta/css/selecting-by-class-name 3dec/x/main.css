@@ -1,0 +1,20 @@
+.bjk{
+    color:blue;
+}
+
+
+/*bejiktasli paragrapflar*/
+p.bjk{
+    font-size:10px;
+}
+
+strong.bjk{
+    font-size: 24px;
+
+}
+
+
+p.bjk.vip.old{
+    border:2px solid orange;
+}
+

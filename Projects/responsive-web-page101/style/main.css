@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+#root > header{
+    border:2px solid blue;
+    padding: 16px;
+
+}
+
+main{
+    border:2px solid blue;
+
+}
+
+main > .section-banner{
+    background-color: pink;
+    min-height: 300px;
+}
+
+#root > footer{
+    border:2px solid blue;
+    padding: 16px;
+
+}
+
+/* helper class*/
+
+.limited-width{
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid red; 
+}
+
+/* Componenets*/
+
+.logo-main{
+    font-size: 1.5rem;
+    border:2px solid red;
+}
+
+.card{
+    background-color: mediumaquamarine;
+    border:2px solid black;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+
+ .nav-main{
+    border:2px solid red;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+.nav-main ul{
+    width: 50vh;
+    height: 100vh;
+
+}
+
+@media ( min-width:800px ){
+
+    .card-list{display:flex;}
+
+    .card{
+
+        flex-grow:1;  
+
+        flex-basis:0; 
+        flex:1 1 0;
+      
+
+    }
+
+}
+
+
+
+
+
+@media ( min-width:1000px ){
+    .nav-main{
+        position: static;
+    }
+
+    .nav-main ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        column-gap: 24px;
+    
+    }
+
+    .nav-main ul li{
+        border:1px solid black;
+    }
+    
+
+
+    .nav-main > .btn-toggle{
+        display: none;
+    }
+
+
+    #root > header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+}

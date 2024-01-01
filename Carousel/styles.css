@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+   
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h1.logo{
+
+    font-size: 2rem;
+}
+
+
+
+#root{
+    border: 2px solid black;
+    margin: 8px;
+}
+
+
+#root > :is( header, main, footer ){
+    padding: 24px;
+
+}
+
+
+#root > header{
+    border: 2px solid black;
+}
+
+main{
+    border: 2px solid black;
+}
+
+
+main > section{
+    margin:32px 0 64px;
+}
+
+
+
+#root > footer{
+    border: 2px solid black;
+}
+
+
+.carousel{
+    border:5px solid blue;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+
+.carousel > ul{
+    border:4px solid red;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    
+}
+
+.carousel > ul > li{
+    border:4px solid orange;
+    flex:1 1 0;
+}
+
+.carousel > ul > li img{
+    object-fit: cover; /*sigdirmaya calisir kaliteyi yzmadan*/
+    width: 100%;
+    height: 100%;
+
+}
+
+.carousel > nav{
+    border: 10px solid aqua;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+
+}
+
+.carousel > nav > button{
+ width:48px;
+ height: 48px;  
+ border-radius: 50%;
+ border: 2px solid black;
+ background-color: #eeee;
+ cursor:pointer;
+ font-size: 1.2rem;
+}
+
+.carousel > nav > button:hover{
+    background-color: #444;
+    color: #eeee;
+   }
+   
+   .carousel > nav > button[aria-current]{
+    border-color: aqua;
+    background-color:grey;
+    color:white;
+   }

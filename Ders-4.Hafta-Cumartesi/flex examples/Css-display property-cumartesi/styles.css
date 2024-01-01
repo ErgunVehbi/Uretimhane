@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h1.logo{
+
+    font-size: 2rem;
+}
+
+
+
+#root{
+    border: 2px solid black;
+    margin: 8px;
+}
+
+
+#root > :is( header, main, footer ){
+    padding: 24px;
+
+}
+
+
+#root > header{
+    border: 2px solid black;
+}
+
+main{
+    border: 2px solid black;
+}
+
+
+main > section{
+    margin:32px 0 64px;
+}
+
+main .container-example{
+    border:2px solid pink;
+    background-color: rgb(157, 225, 225);
+}
+
+/*flex ornek 1*/
+
+main > section:nth-of-type(1) > .container-example{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+
+
+main > section:nth-of-type(1) > .container-example > .logo{
+    border: 2px solid red;
+ }
+
+
+ main > section:nth-of-type(1) > .container-example > nav{
+    border: 2px solid red;
+ }
+
+ main > section:nth-of-type(1) > .container-example nav ul{
+    display: flex;
+    column-gap: 8px;
+    border:4px solid blue;
+
+ }
+
+
+
+main > section:nth-of-type(1) > .container-example nav li{
+    border:2px solid orange;
+
+}
+
+/*flex ornek 2*/
+main > section:nth-of-type(2) > .container-example{
+    display: flex;
+
+}
+
+main > section:nth-of-type(2) > .container-example > h1{
+    border:2px solid red;
+
+}
+
+main > section:nth-of-type(2) > .container-example > nav{
+    border:2px solid red;
+    /* flex grow:1, flex shrink, flex basis*/
+
+    flex:1 1 auto;
+    text-align: right;
+
+}
+
+
+
+main > section:nth-of-type(2) > .container-example > ul{
+    border:2px solid red;
+
+}
+
+
+
+/*flex ornek 3*/
+main > section:nth-of-type(3) > .container-example{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+main > section:nth-of-type(3) > .container-example > .container-right{
+ display: flex;
+
+
+}
+
+
+/*flex ornek 4*/
+
+main > section:nth-of-type(4) > .container-example{
+    display: flex;
+    gap: 24px;
+
+}
+
+
+main > section:nth-of-type(4) > .container-example > div{
+    border:2px solid red;
+    flex:1 1 auto;
+
+}
+
+/*flex ornek 5*/
+
+main > section:nth-of-type(5) > .container-example > .row{
+    display: flex;
+    border: 5px solid blue;
+    gap: 24px;
+
+}
+
+
+main > section:nth-of-type(5) > .container-example > .row > .col{
+    border: 2px solid red;
+    flex:1 1 0;
+
+}
+
+
+/*flex ornek 6*/
+
+main > section:nth-of-type(6) > .container-example{
+    border: 5px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 24px;
+
+}
+
+
+main > section:nth-of-type(6) > .container-example > .col{
+    border: 1px solid red;
+    flex-basis:calc( (100% - 24px* 3)  / 4 );
+
+}
+
+
+
+
+
+#root > footer{
+    border: 2px solid black;
+}
+
+
+

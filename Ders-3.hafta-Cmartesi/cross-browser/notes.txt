@@ -1,0 +1,8 @@
+bir suru yerden oku
+reset css
+default i sifirlar
+hocanin gosterdigi seyler yetmemeli
+Border radius mdn docs  dan oku
+
+canIuse.com bakmak lazim hersiteye yapabilirmisin diye 
+

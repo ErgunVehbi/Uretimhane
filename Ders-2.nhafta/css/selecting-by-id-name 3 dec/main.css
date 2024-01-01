@@ -1,0 +1,14 @@
+#root{
+    border:10px dotted blue;
+}
+
+#root > header{
+    border:4px solid orangered
+}
+main{
+    border:4px solid black;
+}
+
+#root > footer{
+    border:4px solid limegreen
+}

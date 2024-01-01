@@ -1,0 +1,36 @@
+/*
+ne kadar deep ve specific se o daha guclu ve o secilir
+
+ama inline css hepsini ezer
+
+*/
+
+
+
+body{
+    background-color: beige;
+}
+
+p{
+    color: red;
+}
+
+html body p{
+    color:blue;
+}
+
+body p{
+    color:green
+}
+
+body > p{
+    color:pink
+
+}
+
+/* bu nukller  bomba herseyi override eder ama kullanilmasi iyi practice degil 
+p{
+    color:aqua!important;
+}
+*/
+

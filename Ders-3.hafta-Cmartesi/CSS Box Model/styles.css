@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size:32px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo{
+    font-size:40px;
+
+}
+
+.logo span{
+    background-color: black;
+    color:aqua;
+}
+
+
+#root{
+    border:2px solid red;
+    margin: 24px;
+}
+
+#root > header{
+    border:2px solid blue;
+    padding: 24px;
+}
+
+
+
+main{
+    border:2px solid black;
+    padding: 24px 24px 112px;
+}
+
+main section .box{
+    border: 10px solid aqua ;
+    width: 200px;
+    height: 200px;
+
+
+    /* uzun*/
+    margin-top:40px;
+    margin-right:30px;
+    margin-bottom:20px;
+    margin-left:70px;
+
+    /* 4 lu*/
+    margin:40px 30px 20px 20px;
+
+     /* 2 lu*/
+    margin: 40px 30px;
+
+     /* 3 lu*/
+    margin: 40px 30px 20px;
+
+    /*kisa */
+    /*top right bootom,left 50px   clock wise direction*/
+
+
+    margin: 50px; /*cerceve disi bosluk*/
+
+    
+
+
+    padding: 50px; /*cerceve ici bosluk*/
+
+
+
+}
+
+main section .box-2{
+    border:10px solid orange;
+    width: 125px; /*cerceve dahil wifdth height*/
+    height: 125px;
+
+    margin:20px;
+    padding:20px;
+    
+
+}
+
+main .box-3{
+    border:10px solid blue;
+    width: 250px; /*cerceve dahil wifdth height*/
+    height: 250px;
+
+    margin:20px;
+    padding:20px;
+   
+
+
+}
+
+
+
+
+
+
+#root > footer{
+    border:2px solid blue;
+    background-color: #333;
+    color:white;
+    padding: 56px 40px 160px;
+}

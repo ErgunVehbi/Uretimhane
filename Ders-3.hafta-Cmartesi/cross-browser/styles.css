@@ -1,0 +1,34 @@
+h1{
+    font-size:40px;
+}
+
+
+#root{
+    border:10px solid red;
+}
+
+#root > header{
+    border:2px solid blue;
+}
+
+main{
+    border:20px solid orange;
+    border-radius: 40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -o-border-radius:40px;
+    -ms-border-radius:40px;
+    
+}
+
+#root > footer{
+    border:2px solid blue;
+}
+
+/* display flex i destekliyormusun */
+@supports(display: flex){
+    /*destek varsa guvenle devam et`*/
+    main{
+        display: flex;
+    }
+}

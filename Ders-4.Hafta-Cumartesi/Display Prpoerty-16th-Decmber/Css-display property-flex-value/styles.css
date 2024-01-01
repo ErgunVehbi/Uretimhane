@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h1.logo{
+
+    font-size: 2rem;
+}
+
+
+
+#root{
+    border: 2px solid black;
+    margin: 8px;
+}
+
+
+#root > :is( header, main, footer ){
+    padding: 24px;
+
+}
+
+
+#root > header{
+    border: 2px solid black;
+}
+
+main{
+    border: 2px solid black;
+}
+
+
+
+
+/* butun genel konsnyir iin ozelliker*/
+main > section > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /** main axisspace between,spacerraound, end, centerm space evenly*/
+    align-items: stretch; /*crossaxis, end, start, center*/
+    height: 300px;
+    border:4px solid black;
+
+}
+
+
+main > section > .container > div{
+    border:4px solid rgb(232, 156, 167);
+    width: 40px;
+
+}
+
+
+/*ikinci gorunnen container icin ozellikler*/
+main > section:nth-of-type(1) .container:nth-of-type(2){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*ikinci gorunnen container icin ozellikler*/
+main > section:nth-of-type(1) .container:nth-of-type(3){
+    column-gap: 24px;
+    row-gap: 16px;
+    flex-wrap: nowrap;
+
+
+
+/*
+1.flex direction
+2.justify content
+3.alighn-items
+4.gap, row-gap, column gap
+5.flex-wrap
+
+
+
+*/
+
+}
+
+
+/*ikinci gorunnen container icin ozellikler*/
+main > section:nth-of-type(1) .container:nth-of-type(3) > div{
+
+ }
+ 
+
+
+#root > footer{
+    border: 2px solid black;
+}
+
+
+

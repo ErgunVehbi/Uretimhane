@@ -1,0 +1,125 @@
+/* html etiketinin varsaiyili font buyuklugu 16ox dir. */
+/* in that case 1 em  = 16px*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-size:32px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p{
+    margin: 16px 0;
+}
+
+.logo span{
+    background-color: black;
+    color:pink;
+}
+
+
+#root{
+    border:2px solid red;
+    margin: 24px;
+}
+
+#root > header{
+    border:2px solid blue;
+    padding: 24px;
+}
+
+
+
+main{
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    padding: 24px;
+}
+
+
+main > section > .container{
+    margin-top: 24px;
+    border: 2px solid black;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+main > section > .container > .box{
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+}
+
+
+main > .section-2 > .container > .box{
+    border-color:pink;
+    color:pink;
+    width: 50%; 
+
+}
+
+
+main > .section-3 > .container > .box{
+    width: 4rem; 
+
+}
+
+
+
+
+
+main > section{
+    border: 2px solid red; 
+    margin-bottom: 48px;
+    
+}
+
+
+
+#root > footer{
+    border:2px solid blue;
+    padding: 24px;
+}
+
+#root > footer h3{
+    border:2px solid red;
+    padding-bottom: 16px;
+}
+
+
+
+
+#root > footer nav li{
+   
+    margin-bottom:16px;
+
+}
+
+
+
+
+
+
